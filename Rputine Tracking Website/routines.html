@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Routine Tracker - My Routines</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="routines.html">Routines</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Routines</h1>
+    <div id="routine-list">
+      <!-- Display the list of routines dynamically -->
+    </div>
+
+    <div id="add-routine-form">
+      <h2>Create New Routine</h2>
+      <form id="routine-form">
+        <label for="routine-name">Routine Name:</label>
+        <input type="text" id="routine-name" required>
+
+        <label for="routine-description">Description:</label>
+        <textarea id="routine-description"></textarea>
+
+        <h3>Tasks:</h3>
+        <ul id="task-list">
+          <!-- Dynamically add tasks using JavaScript -->
+        </ul>
+
+        <button type="button" id="add-task-button" onclick="addTask()">Add Task</button>
+
+        <button type="submit">Create Routine</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
